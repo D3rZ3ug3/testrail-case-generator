@@ -1,0 +1,66 @@
+[
+    {
+        "name": "FTP Client Inbound External",
+        "description": "Validate if inbound FTP criteria properly handles inbound client data",
+        "fname": "ftp+external+client-MGIT_BISTESTAzure_ALL_ALL_IN_FTP_Decide_POLL.test",
+        "validation": "SET @ITF = 'ftp';SET @ARGS1 = 'external';SET @ARGS2 = 'client';SET @FNAME = 'MGIT_BISTESTAzure_ALL_ALL_IN_FTP_Decide_POLL';SET @STEP = 'Delivered';SET @PROCNAME = 'StdProcessConversion';SET @ENTNAME = 'MGIT_BISTESTAzure_ALL_ALL_IN_FTP_Decide';",
+        "input": "MGIT_BISTestAzure_SBI_4938_IN_HF_EASY_2_output.txt",
+        "typeRef": "CriteriaFTPType"
+    },
+    {
+        "name": "FTP Client Inbound Internal",
+        "description": "Validate if inbound FTP criteria properly handles inbound client data",
+        "fname": "ftp+internal+client-MGIT_BISTESTAzure_ALL_ALL_IN_FTP_Decide_POLL.test",
+        "validation": "SET @ITF = 'ftp';SET @ARGS1 = 'internal';SET @ARGS2 = 'client';SET @FNAME = 'MGIT_BISTESTAzure_ALL_ALL_IN_FTP_Decide_POLL';SET @STEP = 'Delivered';SET @PROCNAME = 'StdProcessConversion';SET @ENTNAME = 'MGIT_BISTESTAzure_ALL_ALL_IN_FTP_Decide';",
+        "input": "MGIT_BISTestAzure_SBI_4938_IN_HF_EASY_2_output.txt",
+        "typeRef": "CriteriaFTPType"
+    },
+    {
+        "name": "FTP Server Inbound External",
+        "description": "Validate if inbound FTP criteria properly handles inbound server data",
+        "fname": "ftp+external+server-MGIT_BISTESTAzure_ALL_ALL_IN_FTPController.test",
+        "validation": "SET @ITF = 'ftp';SET @ARGS1 = 'external';SET @ARGS2 = 'server';SET @FNAME = 'MGIT_BISTESTAzure_ALL_ALL_IN_FTPController';SET @STEP = 'Delivered';SET @PROCNAME = 'StdProcessConversion';SET @ENTNAME = 'MGIT_BISTESTAzure_ALL_ALL_IN_FTPExternalController';",
+        "input": "MGIT_BISTestAzure_SBI_4938_IN_HF_EASY_2_output.txt",
+        "typeRef": "CriteriaFTPControllerType"
+    },
+    {
+        "name": "FTP Server Inbound Internal",
+        "description": "Validate if inbound FTP criteria properly handles inbound server data",
+        "fname": "ftp+internal+server-MGIT_BISTESTAzure_ALL_ALL_IN_FTPController.test",
+        "validation": "SET @ITF = 'ftp';SET @ARGS1 = 'internal';SET @ARGS2 = 'server';SET @FNAME = 'MGIT_BISTESTAzure_ALL_ALL_IN_FTPController';SET @STEP = 'Delivered';SET @PROCNAME = 'StdProcessConversion';SET @ENTNAME = 'MGIT_BISTESTAzure_ALL_ALL_IN_FTPLocalController';",
+        "input": "MGIT_BISTestAzure_SBI_4938_IN_HF_EASY_2_output.txt",
+        "typeRef": "CriteriaFTPControllerType"
+    },
+    {
+        "name": "FTP Polling via Process",
+        "description": "Validate if initializing a new FTP polling process via entity config works",
+        "fname": "ftp+polling+process-MGIT_BISTESTAzure_ALL_ALL_OUT_FTP_POLLING_TRIGGER.test",
+        "validation": "SET @ITF = 'ftp';SET @ARGS1 = 'polling';SET @ARGS2 = 'process';SET @FNAME = 'MGIT_BISTESTAzure_ALL_ALL_OUT_FTP_POLLING_TRIGGER';SET @STEP = '';SET @PROCNAME = 'EDI-FtpPollFromProcess';SET @ENTNAME = 'MGIT_BISTESTAzure_ALL_ALL_OUT_FTP_POLLING';",
+        "input": "GENERIC_TRIGGER.txt",
+        "typeRef": "FTPPollingType"
+    },
+    {
+        "name": "FTP Polling via Scheduler",
+        "description": "Validate if initializing a new FTP polling process via scheduler works",
+        "fname": "ftp+polling+scheduler-MGIT_BISTESTAzure_ALL_ALL_OUT_FTP_POLLING.test",
+        "validation": "SET @ITF = 'ftp';SET @ARGS1 = 'polling';SET @ARGS2 = 'scheduler';SET @FNAME = 'MGIT_BISTESTAzure_ALL_ALL_OUT_FTP_POLLING';SET @STEP = '';SET @PROCNAME = 'EDI-FtpPoll';SET @ENTNAME = 'MGIT_BISTESTAzure_ALL_ALL_OUT_FTP_POLLING';",
+        "input": "GENERIC_TRIGGER.txt",
+        "typeRef": "SchedulerFTPPolling"
+    },
+    {
+        "name": "FTP Client Outbound Internal",
+        "description": "Validate if FTP client can write to internal server",
+        "fname": "hfd+ascii+-MGIT_BISTESTAzure_ALL_ALL_OUT_FTP_Internal.test",
+        "validation": "SET @ITF = 'hfd';SET @ARGS1 = 'ascii';SET @ARGS2 = '';SET @FNAME = 'MGIT_BISTESTAzure_ALL_ALL_OUT_FTP_Internal';SET @STEP = 'Delivered';SET @PROCNAME = 'StdProcessConversion';SET @ENTNAME = 'MGIT_BISTESTAzure_ALL_ALL_OUT_FTP_Internal';",
+        "input": "MGIT_BISTestAzure_SBI_4938_IN_HF_EASY_2_output.txt",
+        "typeRef": "ForwardingFTPType"
+    },
+    {
+        "name": "FTP Client Outbound External",
+        "description": "Validate if FTP client can write to external server",
+        "fname": "hfd+ascii+-MGIT_BISTESTAzure_ALL_ALL_OUT_FTP_External.test",
+        "validation": "SET @ITF = 'hfd';SET @ARGS1 = 'ascii';SET @ARGS2 = '';SET @FNAME = 'MGIT_BISTESTAzure_ALL_ALL_OUT_FTP_External';SET @STEP = 'Delivered';SET @PROCNAME = 'StdProcessConversion';SET @ENTNAME = 'MGIT_BISTESTAzure_ALL_ALL_OUT_FTP_External';",
+        "input": "MGIT_BISTestAzure_SBI_4938_IN_HF_EASY_2_output.txt",
+        "typeRef": "ForwardingFTPType"
+    }
+]

@@ -1,0 +1,13 @@
+[
+    {
+        "name": "BAAN Inbound",
+        "description": "Validate BAAN inbound process handling",
+        "validation": "TODO validate how to handle/initiate BAAN data",
+        "typeref": "CriteriaBaanType"
+    },
+    {
+        "name": "BAAN Outbound",
+        "description": "Validate BAAN outbound process handling",
+        "validation": "TODO validate how to handle/initiate BAAN data"
+    }
+]

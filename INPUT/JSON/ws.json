@@ -1,0 +1,12 @@
+[
+  {
+      "name": "Consumed WebServices",
+      "description": "Validate if BIS handles consumed webservices successfully",
+      "validation": "Call external WebService and validate process"
+  },
+  {
+      "name": "Published WebServices",
+      "description": "Validate if BIS handles published webservices successfully",
+      "validation": "Call BIS exposed WebService and validate process"
+  }
+]

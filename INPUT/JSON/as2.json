@@ -1,0 +1,39 @@
+[
+    {
+        "name": "AS2 Inbound External",
+        "description": "Validate if inbound AS2 criteria works if received via external connection",
+        "fname": "as2+external+TFNAME-EDIFACT_CRITERIA_ABC.test",
+        "validation": "SET @ITF = 'as2';SET @ARGS1 = 'external';SET @ARGS2 = 'TFNAME';SET @FNAME = 'EDIFACT_CRITERIA_ABC';SET @STEP = '';SET @PROCNAME = 'StdProcessConversion';SET @ENTNAME = 'MGIT_BISTestAzure_SBI_EDIFACT_IN_AS2_CRITERIA_TEST';",
+        "input": "MGIT_BISTestAzure_SBI_4938_IN_HF_EASY_2_output.txt",
+        "typeRef": "CriteriaAS2Type"
+    },
+    {
+        "name": "AS2 Inbound Internal",
+        "description": "Validate if inbound AS2 criteria works if received via internal connection",
+        "fname": "as2+internal+TFNAME-EDIFACT_CRITERIA_ABC.test",
+        "validation": "SET @ITF = 'as2';SET @ARGS1 = 'internal';SET @ARGS2 = 'TFNAME';SET @FNAME = 'EDIFACT_CRITERIA_ABC';SET @STEP = '';SET @PROCNAME = 'StdProcessConversion';SET @ENTNAME = 'MGIT_BISTestAzure_SBI_EDIFACT_IN_AS2_CRITERIA_TEST';",
+        "input": "MGIT_BISTestAzure_SBI_4938_IN_HF_EASY_2_output.txt",
+        "typeRef": "CriteriaAS2Type"
+    },
+    {
+        "name": "AS2 Outbound Internal",
+        "description": "Validate if inbound AS2 criteria works if received via internal connection",
+        "fname": "hfd+ascii+TFNAME-MGIT_BISTestAzure_ALL_ALL_IN_AS2_INT_OUT_AS2_HF.test",
+        "validation": "SET @ITF = 'hfd';SET @ARGS1 = 'ascii';SET @ARGS2 = 'TFNAME';SET @FNAME = 'MGIT_BISTestAzure_ALL_ALL_IN_AS2_INT_OUT_AS2_HF';SET @STEP = 'Delivered';SET @PROCNAME = 'StdProcessConversion';SET @ENTNAME = 'MGIT_BISTestAzure_ALL_ALL_IN_AS2_INT_OUT_AS2_HF';",
+        "input": "MGIT_BISTestAzure_SBI_4938_IN_HF_EASY_2_output.txt",
+        "typeRef": "ForwardingAS2Type"
+    },
+    {
+        "name": "AS2 Outbound External",
+        "description": "Validate if inbound AS2 criteria works if received via external connection",
+        "fname": "hfd+ascii+TFNAME-MGIT_BISTestAzure_ALL_ALL_IN_AS2_EXT_OUT_AS2_HF.test",
+        "validation": "SET @ITF = 'hfd';SET @ARGS1 = 'ascii';SET @ARGS2 = 'TFNAME';SET @FNAME = 'MGIT_BISTestAzure_ALL_ALL_IN_AS2_EXT_OUT_AS2_HF';SET @STEP = 'Delivered';SET @PROCNAME = 'StdProcessConversion';SET @ENTNAME = 'MGIT_BISTestAzure_ALL_ALL_IN_AS2_EXT_OUT_AS2_HF';",
+        "input": "MGIT_BISTestAzure_SBI_4938_IN_HF_EASY_2_output.txt",
+        "typeRef": "ForwardingAS2Type"
+    },
+    {
+        "name": "AS2 MDM Report Sending",
+        "description": "Validate if configuration, the AS2 partner receives an MDM report",
+        "typeRef": "ReportSendingType"
+    }
+]

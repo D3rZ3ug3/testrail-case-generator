@@ -1,0 +1,18 @@
+[
+    {
+        "name": "Hotfolder Inbound Criteria",
+        "description": "Validate Hotfolder inbound criteria",
+        "fname": "hfd+ascii+-MGIT_BISTestAzure_ALL_ALL_OUT_HOTFOLDER.test",
+        "validation": "SET @ITF = 'hfd';SET @ARGS1 = 'ascii';SET @ARGS2 = '';SET @FNAME = 'MGIT_BISTestAzure_ALL_ALL_OUT_HOTFOLDER';SET @STEP = 'Delivered';SET @PROCNAME = 'StdProcessConversion';SET @ENTNAME = 'MGIT_BISTestAzure_ALL_ALL_OUT_HOTFOLDER';",
+        "input": "MGIT_BISTestAzure_SBI_4938_IN_HF_EASY_2_output.txt",
+        "typeRef": "CriteriaHotfolderType"
+    },
+    {
+        "name": "Hotfolder Outbound",
+        "description": "Validate Hotfolder outbound process",
+        "fname": "hfd+ascii+-MGIT_BISTestAzure_ALL_ALL_IN_HOTFOLDER.test",
+        "validation": "SET @ITF = 'hfd';SET @ARGS1 = 'ascii';SET @ARGS2 = '';SET @FNAME = 'MGIT_BISTestAzure_ALL_ALL_IN_HOTFOLDER';SET @STEP = 'Delivered';SET @PROCNAME = 'StdProcessConversion';SET @ENTNAME = 'MGIT_BISTestAzure_ALL_ALL_IN_HOTFOLDER';",
+        "input": "MGIT_BISTestAzure_SBI_4938_IN_HF_EASY_2_output.txt",
+        "typeRef": "ForwardingHotfolderType"
+    }
+]

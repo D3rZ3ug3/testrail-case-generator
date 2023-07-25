@@ -1,0 +1,42 @@
+[
+  {
+      "name": "EASY archive stop processing",
+      "description": "Validate easy archive upload is not performed if no output was generated",
+      "fname": "hfd+ascii+-MGIT_BISTestAzure_SBI_4938_IN_HF_EASY.test",
+      "validation": "SET @ITF = 'hfd';SET @ARGS1 = 'ascii';SET @ARGS2 = '';SET @FNAME = 'MGIT_BISTestAzure_SBI_4938_IN_HF_EASY';SET @STEP = 'Conversion Done';SET @PROCNAME = 'StdProcessConversion';SET @ENTNAME = 'MGIT_BISTestAzure_SBI_4938_IN_HF_EASY';",
+      "input": "MGIT_BISTestAzure_SBI_4938_IN_HF_EASY_1_no_output.txt",
+      "typeRef": "EasyArchiveType"
+  },
+  {
+      "name": "EASY archive processing",
+      "description": "Validate easy archive processing does not stop if output exists",
+      "fname": "hfd+ascii+-MGIT_BISTestAzure_SBI_4938_IN_HF_EASY.test",
+      "validation": "SET @ITF = 'hfd';SET @ARGS1 = 'ascii';SET @ARGS2 = '';SET @FNAME = 'MGIT_BISTestAzure_SBI_4938_IN_HF_EASY';SET @STEP = 'Delivered';SET @PROCNAME = 'StdProcessConversion';SET @ENTNAME = 'MGIT_BISTestAzure_SBI_4938_IN_HF_EASY';",
+      "input": "MGIT_BISTestAzure_SBI_4938_IN_HF_EASY_2_output.txt",
+      "typeRef": "EasyArchiveType"
+  },
+  {
+      "name": "EASY archive upload",
+      "description": "Validate easy archive upload",
+      "fname": "hfd+ascii+-MGIT_BISTestAzure_SBI_4938_IN_HF_EASY.test",
+      "validation": "SET @ITF = 'hfd';SET @ARGS1 = 'ascii';SET @ARGS2 = '';SET @FNAME = 'MGIT_BISTestAzure_SBI_4938_IN_HF_EASY';SET @STEP = 'Delivered';SET @PROCNAME = 'ArchiveSystem';SET @ENTNAME = 'EASY_VIENNA_AS2_FORWARDING';",
+      "input": "MGIT_BISTestAzure_SBI_4938_IN_HF_EASY_2_output.txt",
+      "typeRef": "EasyArchiveType"
+  },
+  {
+      "name": "MessageTracking archiving",
+      "description": "Validate if archiving works properly",
+      "fname": "hfd+ascii+-MGIT_BISTestAzure_SBI_4938_IN_HF_MTARCHIVE.test",
+      "validation": "SET @ITF = 'hfd';SET @ARGS1 = 'ascii';SET @ARGS2 = '';SET @FNAME = 'MGIT_BISTestAzure_SBI_4938_IN_HF_MTARCHIVE';SET @STEP = 'Conversion Done';SET @PROCNAME = 'StdProcessConversion';SET @ENTNAME = 'MGIT_BISTestAzure_SBI_4938_IN_HF_MTARCHIVE';",
+      "input": "MGIT_BISTestAzure_SBI_4938_IN_HF_MTARCHIVE.txt",
+      "typeRef": "ArchivingMessageType"
+  },
+  {
+      "name": "MessageTracking DB",
+      "description": "Validate if BIS updates MessageTracking database",
+      "fname": "hfd+ascii+-MGIT_BISTestAzure_SBI_4938_IN_HF_MTARCHIVE.test",
+      "validation": "SET @ITF = 'hfd';SET @ARGS1 = 'ascii';SET @ARGS2 = '';SET @FNAME = 'MGIT_BISTestAzure_SBI_4938_IN_HF_MTARCHIVE';SET @STEP = '1';SET @PROCNAME = 'StdProcessConversion';SET @ENTNAME = 'MGTI_BISTestAzure_SBI_4938_IN_HF_MTARCHIVE_CHECK_DB';",
+      "input": "MGIT_BISTestAzure_SBI_4938_IN_HF_MTARCHIVE.txt",
+      "typeRef": "MessageTrackingType"
+  }
+]

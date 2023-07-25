@@ -1,0 +1,26 @@
+[
+    {
+        "name": "DB MSF SAMI Outbound DS",
+        "description": "Validate if BIS receives LAB from MSF SAMI, updates LAB for supplier EL133320",
+        "fname": "db+sami+-EL133320.test",
+        "validation": "SET @ITF = 'db';SET @ARGS1 = 'sami';SET @ARGS2 = '';SET @FNAME = 'EL133320';SET @STEP = '30';SET @PROCNAME = 'StdProcessConversion';SET @ENTNAME = 'MGIT_BISAzureTesting_ALL_ALL_SAME_StatusCheck';",
+        "input": "GENERIC_TRIGGER.txt",
+        "typeRef": "CriteriaDBType;SQLConverterType;SQLPrepareFilterType;SQLUpdateType"
+    },
+    {
+        "name": "DB MSF SAMI Outbound LAB",
+        "description": "Validate if BIS receives LAB from MSF SAMI, updates LAB for supplier EL195850",
+        "fname": "db+sami+-EL195850.test",
+        "validation": "SET @ITF = 'db';SET @ARGS1 = 'sami';SET @ARGS2 = '';SET @FNAME = 'EL195850';SET @STEP = '30';SET @PROCNAME = 'StdProcessConversion';SET @ENTNAME = 'MGIT_BISAzureTesting_ALL_ALL_SAME_StatusCheck';",
+        "input": "GENERIC_TRIGGER.txt",
+        "typeRef": "CriteriaDBType;SQLConverterType;SQLPrepareFilterType;SQLUpdateType"
+    },
+    {
+        "name": "DB MSF SAMI Outbound",
+        "description": "Validate if BIS can write to MSF's SAMI DB successfully",
+        "fname": "hfd+ascii+-MSF_Supplier_ASN_IN_HF.test",
+        "validation": "SET @ITF = 'hfd';SET @ARGS1 = 'ascii';SET @ARGS2 = '';SET @FNAME = 'MSF_Supplier_ASN_IN_HF';SET @STEP = 'Conversion done';SET @PROCNAME = 'StdProcessConversion';SET @ENTNAME = 'MSF_Supplier_ASN_IN_HF';",
+        "input": "MSF_Supplier_ASN_IN_HF.txt",
+        "typeRef": "ForwardingDBType"
+    }
+]

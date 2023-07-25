@@ -1,0 +1,42 @@
+[
+  {
+      "name": "Compliance mapping",
+      "description": "Validate if compliance mapping validate works",
+      "fname": "hfd+ascii+-MGIT_BISTESTAzure_ASN_856_IN_HF_ComplianceCheck.test",
+      "validation": "SET @ITF = 'hfd';SET @ARGS1 = 'ascii';SET @ARGS2 = '';SET @FNAME = 'MGIT_BISTESTAzure_ASN_856_IN_HF_ComplianceCheck';SET @STEP = 'Delivered';SET @PROCNAME = 'ReplyControl';SET @ENTNAME = 'MGIT_BISTESTAzure_ASN_856_IN_HF_ComplianceCheck';",
+      "input": "MGIT_BISTESTAzure_ASN_856_IN_HF_ComplianceCheck.txt",
+      "typeRef": "_"
+  },
+  {
+      "name": "Validation Step",
+      "description": "Validate if Validation via checkmapping works",
+      "fname": "hfd+ascii+-MGIT_BISTestAzure_Validiation_Step_CHECK_MAP.test",
+      "validation": "SET @ITF = 'hfd';SET @ARGS1 = 'ascii';SET @ARGS2 = '';SET @FNAME = 'MGIT_BISTestAzure_Validiation_Step_CHECK_MAP';SET @STEP = '';SET @PROCNAME = 'StdProcessConversion';SET @ENTNAME = 'MGIT_BISTestAzure_Validiation_Step_CHECK_MAP';",
+      "input": "MGIT_BISTestAzure_Validiation_Step_CHECK_MAP.txt",
+      "typeRef": "_"
+  },
+  {
+      "name": "Validation Before Conversion Step",
+      "description": "Validate if Validation before Conversion via checkmapping works",
+      "fname": "hfd+utf+-MGIT_BISTestAzure_ANY_ANY_OUT_HF_VALIDATIONPRECONVERSION.test",
+      "validation": "SET @ITF = 'hfd';SET @ARGS1 = 'utf';SET @ARGS2 = '';SET @FNAME = 'MGIT_BISTestAzure_ANY_ANY_OUT_HF_VALIDATIONPRECONVERSION';SET @STEP = 'Conversion done';SET @PROCNAME = 'StdProcessConversion';SET @ENTNAME = 'MGIT_BISTestAzure_ANY_ANY_OUT_HF_VALIDATIONPRECONVERSION';",
+      "input": "MGIT_BISTestAzure_ANY_ANY_OUT_HF_VALIDATIONPRECONVERSION_2.txt",
+      "typeRef": "_"
+  },
+  {
+      "name": "Validation Before Conversion Step2",
+      "description": "Validate if Validation before Conversion via checkmapping works",
+      "fname": "hfd+utf+-MGIT_BISTestAzure_ANY_ANY_OUT_HF_VALIDATIONPRECONVERSION.test",
+      "validation": "SET @ITF = 'hfd';SET @ARGS1 = 'utf';SET @ARGS2 = '';SET @FNAME = 'MGIT_BISTestAzure_ANY_ANY_OUT_HF_VALIDATIONPRECONVERSION';SET @STEP = 'Conversion done';SET @PROCNAME = 'StdProcessConversion';SET @ENTNAME = 'MGIT_BISTestAzure_ANY_ANY_OUT_HF_VALIDATIONPRECONVERSION';",
+      "input": "MGIT_BISTestAzure_ANY_ANY_OUT_HF_VALIDATIONPRECONVERSION.txt",
+      "typeRef": "_"
+  },
+  {
+      "name": "SSCCompliance check",
+      "description": "Validate if SSC based compliance check works",
+      "fname": "hfd+ascii+-MGIT_BISTESTAzure_ASN_4987_IN_HF_TO_CC.test",
+      "validation": "SET @ITF = 'hfd';SET @ARGS1 = 'ascii';SET @ARGS2 = '';SET @FNAME = 'MGIT_BISTESTAzure_ASN_4987_IN_HF_TO_CC';SET @STEP = '';SET @PROCNAME = 'StdProcessConversion';SET @ENTNAME = 'MGIT_BISTESTAzure_ASN_4987_IN_UE_ComplianceCheck_Magna';",
+      "input": "MGIT_BISTESTAzure_ASN_4987_IN_HF_TO_CC.txt",
+      "typeRef": "sscBusinessCheckType"
+  }
+]

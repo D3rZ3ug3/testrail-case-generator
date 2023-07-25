@@ -1,0 +1,50 @@
+[
+    {
+        "name": "File Server Inbound External",
+        "description": "Verify if BIS polls remove File properly from CIFS server as FileServer",
+        "fname": "file+cifs+server-MGIT_BISTESTAzure_ALL_ALL_IN_CIFS_Controller.test",
+        "validation": "SET @ITF = 'file';SET @ARGS1 = 'cifs';SET @ARGS2 = 'server';SET @FNAME = 'MGIT_BISTESTAzure_ALL_ALL_IN_CIFS_Controller';SET @STEP = 'Delivered';SET @PROCNAME = 'StdProcessConversion';SET @ENTNAME = 'MGIT_BISTESTAzure_ALL_ALL_IN_CIFS_Controller';",
+        "input": "MGIT_BISTestAzure_SBI_4938_IN_HF_EASY_2_output.txt",
+        "typeRef": "CriteriaFileControllerType"
+    },
+    {
+        "name": "File Server Inbound Internal",
+        "description": "Verify if BIS polls remove File properly from local server as FileServer",
+        "fname": "file+local+client-MGIT_BISTESTAzure_ALL_ALL_IN_File_POLL.test",
+        "validation": "SET @ITF = 'file';SET @ARGS1 = 'local';SET @ARGS2 = 'client';SET @FNAME = 'MGIT_BISTESTAzure_ALL_ALL_IN_File_POLL';SET @STEP = '';SET @PROCNAME = 'StdProcessConversion';SET @ENTNAME = 'MGIT_BISTESTAzure_ALL_ALL_IN_File_POLL';",
+        "input": "MGIT_BISTestAzure_SBI_4938_IN_HF_EASY_2_output.txt",
+        "typeRef": "CriteriaFileControllerType"
+    },
+    {
+        "name": "File Client Inbound External",
+        "description": "Verify if BIS polls remove File properly from CIFS server as FileClient via Schedular",
+        "fname": "file+cifs+client-MGIT_BISTESTAzure_ALL_ALL_IN_CIFS_POLL.test",
+        "validation": "SET @ITF = 'file';SET @ARGS1 = 'cifs';SET @ARGS2 = 'client';SET @FNAME = 'MGIT_BISTESTAzure_ALL_ALL_IN_CIFS_POLL';SET @STEP = '';SET @PROCNAME = 'StdProcessConversion';SET @ENTNAME = 'MGIT_BISTESTAzure_ALL_ALL_IN_CIFS_POLL';",
+        "input": "MGIT_BISTestAzure_SBI_4938_IN_HF_EASY_2_output.txt",
+        "typeRef": "CriteriaFileType"
+    },
+    {
+        "name": "File Client Inbound Internal",
+        "description": "Verify if BIS polls remove File properly from local server as FileClient via Schedular",
+        "fname": "file+local+server-MGIT_BISTESTAzure_ALL_ALL_IN_Local_Controller.test",
+        "validation": "SET @ITF = 'file';SET @ARGS1 = 'local';SET @ARGS2 = 'server';SET @FNAME = 'MGIT_BISTESTAzure_ALL_ALL_IN_Local_Controller';SET @STEP = '';SET @PROCNAME = 'StdProcessConversion';SET @ENTNAME = 'MGIT_BISTESTAzure_ALL_ALL_IN_Local_Controller';",
+        "input": "MGIT_BISTestAzure_SBI_4938_IN_HF_EASY_2_output.txt",
+        "typeRef": "CriteriaFileType"
+    },
+    {
+        "name": "File Client Outbound Internal",
+        "description": "Verify File Client outbound sending process for internal connection",
+        "fname": "hfd+ascii+-MGIT_BISTESTAzure_ALL_ALL_OUT_File.test",
+        "validation": "SET @ITF = 'hfd';SET @ARGS1 = 'ascii';SET @ARGS2 = '';SET @FNAME = 'MGIT_BISTESTAzure_ALL_ALL_OUT_File';SET @STEP = 'Delivered';SET @PROCNAME = 'StdProcessConversion';SET @ENTNAME = 'MGIT_BISTESTAzure_ALL_ALL_OUT_File';",
+        "input": "MGIT_BISTestAzure_SBI_4938_IN_HF_EASY_2_output.txt",
+        "typeRef": "ForwardingFileType"
+    },
+    {
+        "name": "File Client Outbound External",
+        "description": "Verify File Client outbound sending process for external connection",
+        "fname": "hfd+ascii+-MGIT_BISTESTAzure_ALL_ALL_OUT_CIFS.test",
+        "validation": "SET @ITF = 'hfd';SET @ARGS1 = 'ascii';SET @ARGS2 = '';SET @FNAME = 'MGIT_BISTESTAzure_ALL_ALL_OUT_CIFS';SET @STEP = 'Delivered';SET @PROCNAME = 'StdProcessConversion';SET @ENTNAME = 'MGIT_BISTESTAzure_ALL_ALL_OUT_CIFS';",
+        "input": "MGIT_BISTestAzure_SBI_4938_IN_HF_EASY_2_output.txt",
+        "typeRef": "ForwardingFileType"
+    }
+]

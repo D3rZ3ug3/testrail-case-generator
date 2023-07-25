@@ -1,0 +1,26 @@
+[
+  {
+      "name": "UserExit before Conversion",
+      "description": "Validate UserExit before conversion",
+      "fname": "hfd+ascii+-MGIT_BISTESTAzure_ALL_ALL_IN_HF_ToUE_BEFORECONV.test",
+      "validation": "SET @ITF = 'hfd';SET @ARGS1 = 'ascii';SET @ARGS2 = '';SET @FNAME = 'MGIT_BISTESTAzure_ALL_ALL_IN_HF_ToUE_BEFORECONV';SET @STEP = '';SET @PROCNAME = 'StdProcessConversion';SET @ENTNAME = 'MGIT_BISTESTAzure_ALL_ALL_IN_UE_BEFORECONV_NOF';",
+      "input": "MGIT_BISTestAzure_SBI_4938_IN_HF_EASY_2_output.txt",
+      "typeRef": "CriteriaUserExitType;UserExitBeforeConversionType"
+  },
+  {
+      "name": "UserExit converted",
+      "description": "Validate UserExit after conversion processing the converted payload",
+      "fname": "hfd+ascii+-MGIT_BISTESTAzure_ALL_ALL_IN_HF_ToUE_CONVERTED.test",
+      "validation": "SET @ITF = 'hfd';SET @ARGS1 = 'ascii';SET @ARGS2 = '';SET @FNAME = 'MGIT_BISTESTAzure_ALL_ALL_IN_HF_ToUE_CONVERTED';SET @STEP = '';SET @PROCNAME = 'StdProcessConversion';SET @ENTNAME = 'MGIT_BISTESTAzure_ALL_ALL_IN_UE_TESTING_UE_CONVERTED_NOF';",
+      "input": "MGIT_BISTestAzure_SBI_4938_IN_HF_EASY_2_output.txt",
+      "typeRef": "CriteriaUserExitType;UserExitType"
+  },
+  {
+      "name": "UserExit received",
+      "description": "Validate UserExit after conversion processing the received payload",
+      "fname": "hfd+ascii+-MGIT_BISTESTAzure_ALL_ALL_IN_HF_ToUE_RECEIVED.test",
+      "validation": "SET @ITF = 'hfd';SET @ARGS1 = 'ascii';SET @ARGS2 = '';SET @FNAME = 'MGIT_BISTESTAzure_ALL_ALL_IN_HF_ToUE_RECEIVED';SET @STEP = '';SET @PROCNAME = 'StdProcessConversion';SET @ENTNAME = 'MGIT_BISTESTAzure_ALL_ALL_IN_UE_RECEIVED_NOF';",
+      "input": "MGIT_BISTestAzure_SBI_4938_IN_HF_EASY_2_output.txt",
+      "typeRef": "CriteriaUserExitType;UserExitType"
+  }
+]

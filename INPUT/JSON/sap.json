@@ -1,0 +1,29 @@
+[
+  {
+      "name": "SAP Local Server Inbound",
+      "description": "Validate SAP processing leveraging the local file server configuration",
+      "fname": "sap+server+-_MSF_GSVERF03_TO_SPLITTER_702.test",
+      "validation": "SET @ITF = 'sap';SET @ARGS1 = 'server';SET @ARGS2 = '';SET @FNAME = '_MSF_GSVERF03_TO_SPLITTER_702';SET @STEP = '';SET @PROCNAME = 'SplitMappingDecide';SET @ENTNAME = 'MSF_Robert Bosch_SBI_4908_OUT_OFTP2_0000080560';",
+      "input": "_MSF_GSVERF03_TO_SPLITTER_702.txt",
+      "typeRef": "CriteriaSAPType"
+  },
+  {
+      "name": "SAP Inbound",
+      "description": "Validate if BIS receives real IDOC from SAP instance",
+      "validation": "Trigger some IDOC and check if BIS processes it properly"
+  },
+  {
+      "name": "SAP Outbound",
+      "description": "Validate SAP forwarding",
+      "fname": "hfd+ascii+-MGIT_BISTestAzure_ALL_ALL_IN_HF_TO_SAP.test",
+      "validation": "SET @ITF = 'hfd';SET @ARGS1 = 'ascii';SET @ARGS2 = '';SET @FNAME = 'MGIT_BISTestAzure_ALL_ALL_IN_HF_TO_SAP';SET @STEP = 'Delivered';SET @PROCNAME = 'StdProcessConversion';SET @ENTNAME = 'MGIT_BISTestAzure_ALL_ALL_IN_HF_TO_SAP';",
+      "input": "MGIT_BISTestAzure_ALL_ALL_IN_HF_TO_SAP.txt",
+      "typeRef": "ForwardingSAPType"
+  },
+  {
+      "name": "SAP ReportSending",
+      "description": "Validate if SAP process updates status in SAP instance",
+      "validation": "Search for some recent process and validate if SAP status was updated",
+      "typeRef": "SAPReportSendingType"
+  }
+]
