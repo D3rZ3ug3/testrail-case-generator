@@ -1,4 +1,3 @@
-# Automatic Testrail Case Generator
-made by Intern [Noah Fasser](https://github.com/D3rZ3ug3)
+## Automatic Testrail Case Generator with example data
 
-To use it just 
+You are able to find a few JSON files as an example in this branch
