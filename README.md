@@ -8,3 +8,4 @@ To use it just:
 - Change the SECTION_ID in the testrailId.ts file
 - Type _npm start_ in the console
 - Refresh your testrail page
+- Checkout my other stuff on GitHub
